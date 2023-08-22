@@ -3,7 +3,7 @@ int main()
 {
     int op;
     float divi, n1, n2, sum, res, mul;
-    printf("\nCALCULADORA SIMPLE\n\n");
+    printf("\nCALCULADORA SIMPLE\nEl programa hace 4 operaciones con dos números ingresados\n\n");
     printf("\nIngrese el primer número: ");
     scanf("%f", &n1);
     do
@@ -11,7 +11,6 @@ int main()
         printf("\nIngrese el segundo número, distinto de 0: ");
         scanf("%f", &n2);
     } while (n2 == 0);
-
     printf("\nIngrese su opción:\n1.- Suma\n2.- Resta\n3.- Multiplicación\n4.- División\n5.- Otra operación\n6.- Salir\nSu opción: ");
     scanf("%i", &op);
     do
