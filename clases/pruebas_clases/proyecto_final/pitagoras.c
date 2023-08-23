@@ -15,22 +15,34 @@ int main()
 {
     int op;
     float c1, c2, h;
-    printf("Este programa realiza las siguientes operaciones:");
-    printf("\n1.- Calcula la hipotenusa si se le dan los dos catetos.");
-    printf("\2.- Calcula uno de los catetos si se le da la hipotenusa y el otro cateto");
-    printf("\n\nIngrese la opción para realizar su cálculo:\n");
-    printf("\nOpción 1: Calcular cateto\tOpción 2: Calcular hipotenusa");
-    printf("\nSu opción:__");
-    scanf("%int", &op);
-    switch (op)
+    printf("\n\n***Este programa realiza las siguientes operaciones***");
+    printf("\n\n     * Calcula la hipotenusa si se le dan los dos catetos.");
+    printf("\n     * Calcula uno de los catetos si se le da la hipotenusa y el otro cateto");
+    do
     {
-    case 1:
-        do
+        printf("\n\nIngrese la opción para realizar su cálculo:\n");
+        printf("\nOpción 1: Calcular hipotenusa\tOpción 2: Calcular cateto");
+        printf("\nSu opción: ");
+        scanf("%int", &op);
+        switch (op)
         {
-            printf("\nIngrese la medida de la hipotenusa: ");
-            scanf("%f", &h);
-            printf("\nIngrese la medida del cateto: ");
-            scanf("%f", &c2);
-        }while(h<=c2);
-    }
+        case 2:
+            do
+            {
+                do
+                {
+                    printf("\nIngrese la medida de la hipotenusa: ");
+                    scanf("%f", &h);
+                } while (h <= 0);
+                do
+                {
+                    printf("\nIngrese la medida del cateto: ");
+                    scanf("%f", &c2);
+                } while (c2 <= 0);
+            } while (h <= c2);
+            c1 = cateto(c2, h);
+            printf("\nLa medida del cateto es: %.2f", c1);
+        }
+    } while (op == 4);
+    printf("\n\n");
 }
