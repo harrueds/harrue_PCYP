@@ -23,7 +23,7 @@ int main()
         printf("\n\nIngrese la opción para realizar su cálculo:\n");
         printf("\nOpción 1: Calcular hipotenusa\nOpción 2: Calcular cateto\nOpción 3: Salir\nOpción 4: Calcular Nuevamente");
         printf("\nSu opción: ");
-        scanf("%int", &op);
+        scanf("%i", &op);
         switch (op)
         {
         case 1:
@@ -78,6 +78,6 @@ int main()
             printf("\nLa medida del cateto es: %.2f", c1);
             break;
         }
-    } while (op ==1 || op == 2 || op == 3 || op == 4);
-    printf("\n\n");
+    } while (op ==1 || op == 2 || op == 4);
+    printf("\n\nHas salido del programa\n\n");
 }
