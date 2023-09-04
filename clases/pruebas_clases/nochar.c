@@ -13,6 +13,9 @@ int main() {
         if (intentos == 1) {
             printf("Has agotado todos los intentos. El programa se cerrará.\n");
             return 1; // Salir del programa con código de error 1
+        }else if(intentos ==2)
+        {
+            printf("\nLe queda un intento antes de cerrar el programa\n\n");
         }
 
         printf("Error: Ha ingresado un carácter no válido. Intente nuevamente.\n");
@@ -22,5 +25,5 @@ int main() {
     
     printf("El número ingresado es: %f\n", numero);
 
-    return 0; // Salir del programa con éxito
+    return 0;
 }
