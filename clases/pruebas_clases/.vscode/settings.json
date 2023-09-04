@@ -1,2 +1,6 @@
 {
+    "files.associations": {
+        "*.c": "c",
+        "ONEORCERO.C": "cpp"
+    }
 }
