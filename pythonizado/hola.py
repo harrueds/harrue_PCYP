@@ -1,2 +1,2 @@
 #tipico hola mundo
-print("Hola mundo")
+print("\nHola mundo\n")
