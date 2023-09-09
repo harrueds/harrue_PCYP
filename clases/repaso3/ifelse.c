@@ -3,12 +3,15 @@
 int main()
 {
     int a;
-    float r;
-    for (a = 12; a > 1; a--)
+    printf("\nIngrese un número: ");
+    scanf("%i",&a);
+    if(a%2 == 0)
     {
-        printf("\nVoy en el %i\n", a * a);
+	printf("\nEl número es par\n\n");
     }
-    printf("\n\n");
-    r=sqrt(a);
+    else
+   {
+        printf("\nEl número no es par\n\n");
+    }
     return 0;
 }
