@@ -10,11 +10,19 @@ printf("Si ingresa valores negativos, se le volverá a pedir que ingrese el valo
 do{
     printf("Ingrese el valor del primer cateto\nCateto 1: ");
     scanf("%f",&cat1);
+        if(cat1 <=0)
+    {
+        printf("\nLa medida del cateto debe ser un número positivo\n");
+    }
 }while(cat1<=0); //Esta parte pide el cateto 1, y exige que sea positivo
 
 do{
-    printf("\nIngrese el valor del segundo cateto\nCateto 2: ");
+    printf("Ingrese el valor del segundo cateto\nCateto 2: ");
     scanf("%f",&cat2);
+    if(cat2 <=0)
+    {
+        printf("\nLa medida del cateto debe ser un número positivo\n");
+    }
 }while(cat2<=0); 
 
 hip = sqrt(cat1*cat1+cat2*cat2);
