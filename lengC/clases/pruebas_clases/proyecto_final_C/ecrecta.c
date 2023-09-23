@@ -1,21 +1,21 @@
 #include <stdio.h>
-// #include<math.h>
 int main()
 {
-    int x1[2], x2[2], op, mn, md;
+    float x1[2], x2[2], mn, md;
+    int op,n,m;
     printf("\n****Este programa calcula la ecuación de una recta***\n\n");
     do
     {
         printf("Ingrese las coordenadas del primer punto para calcular la ecuación de la recta:\nx1= ");
-        scanf("%i", &x1[0]);
+        scanf("%f", &x1[0]);
         printf("y1= ");
-        scanf("%i", &x1[1]);
+        scanf("%f", &x1[1]);
         printf("\n");
 
         printf("Ingrese las coordenadas del segundo punto para calcular la ecuación de la recta:\nx2= ");
-        scanf("%i", &x2[0]);
+        scanf("%f", &x2[0]);
         printf("y2= ");
-        scanf("%i", &x2[1]);
+        scanf("%f", &x2[1]);
         printf("\n");
 
         printf("Los puntos son: (%i,%i) y (%i,%i)\n", x1[0], x1[1], x2[0], x2[1]);
@@ -58,7 +58,9 @@ int main()
         md = md*(-1);
         printf("\nLa pendiente de la recta es m= %i/%i\n\n",mn,md);
     }
-    n = 
-    printf("\nLa ecuación de la recta es ");
+    m = mn/md;
+    n = x1[1] - ((x2[1] - x1[1])/(x2[0] - x1[0]))*x1[0];
+    printf("\nLa ecuación de la recta es y = %.2fx + %.2f\n\n\n",m,n);
+    
     return 0;
 }
