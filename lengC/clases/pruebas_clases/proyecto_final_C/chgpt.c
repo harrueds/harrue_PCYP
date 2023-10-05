@@ -37,13 +37,13 @@ void sumarMatrices(double matriz1[3][3], double matriz2[3][3]) {
 }
 
 int main() {
-    int opcion;
+    int opcion, variable=0;
     double numero1, numero2;
     int numero;
     double cateto, hipotenusa;
     double matriz1[3][3], matriz2[3][3];
 
-    while (1) {
+    while (variable) {
         printf("\nMenú:\n");
         printf("1. Sumar dos números\n");
         printf("2. Verificar si un número es par\n");
@@ -54,6 +54,7 @@ int main() {
         scanf("%d", &opcion);
 
         switch (opcion) {
+
             case 1:
                 printf("Ingrese el primer número: ");
                 scanf("%lf", &numero1);
@@ -115,8 +116,9 @@ int main() {
             case 5:
                 printf("¡Adiós!\n");
                 return 0;
-            default:
+default:
                 printf("Opción no válida. Por favor, ingrese una opción válida.\n");
+                break;
         }
     }
 
